@@ -10,7 +10,7 @@ public class SurfaceTextureGenerator : MonoBehaviour
     public Texture vertNormTex;
     public float deltaTime = 0f;
     public float animLength = 1f;
-    public int textSize = 1024;
+    public int texSize = 1024;
 
     public RenderTexture[] rts;
     RenderBuffer[] buffers;
@@ -20,7 +20,7 @@ public class SurfaceTextureGenerator : MonoBehaviour
 
     private void Start()
     {
-        CreateRts(textSize);
+        CreateRts(texSize);
     }
 
     void CreateRts(int size)
