@@ -20,7 +20,7 @@
 - Setup textures generated from Animation Texture Baker, to inspector.
 - Then, run.
 - Call `SurfaceTextureGenerator.UpdateRts()`.
-- `SurfaceTextureGenerator.surfacePosTex` and `SurfaceTextureGenerator.surfacePosTex` for get textures.
+- `SurfaceTextureGenerator.surfacePosTex` and `SurfaceTextureGenerator.surfaceNormTex` for get textures.
 
 ## Horse
 
