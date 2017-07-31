@@ -1,34 +1,26 @@
-# Animation Texture Baker for Unity
+# Animated Surface-Position-Texture Generator for Unity
 
 ## Description
 
-- Bake vertex of Animation(legacy) to Texture2D
-- Bake data of Positions and Normals
+- Use with [Animation Texture Baker](https://github.com/sugi-cho/Animation-Texture-Baker)
+- Generate Surface-Position-Texture. (and Normal-Texture)
+- アニメーションメッシュの頂点の位置テクスチャから、メッシュの表面の位置テクスチャを生成する。
 
-![](imgs/original.png)
+![](imgs/run.gif)
 
-- Original GameObject has Animation Component, SkinnedMeshRenderer, Bones.
-- Convert Animation-Data to Texture2D.
+## Setup
 
-![](imgs/positionsTex.png)
-data of Positions.
+![](imgs/importSetting.jpg)
 
-![](imgs/normalsTex.png)
-data of Normals.
+- You need check "Generate Lightmap UVs" in importSettings.
+- Lightmap UV(uv2) is used for generate texture.
 
-![](imgs/converted.png)
-Converted, has only one GameObject.
+![](imgs/inspectorSetup.jpg)
 
-![](imgs/animated.gif)
-running.
-
-## Animation Texture Baker
-
-![](imgs/baker.png)
-
-- C\# script(for setup)
-- ComputeShader(Texture Generator)
-- Shader(Texture Animation Player)
+- Setup textures generated from Animation Texture Baker, to inspector.
+- Then, run.
+- Call `SurfaceTextureGenerator.UpdateRts()`.
+- `SurfaceTextureGenerator.surfacePosTex` and `SurfaceTextureGenerator.surfacePosTex` for get textures.
 
 ## Horse
 

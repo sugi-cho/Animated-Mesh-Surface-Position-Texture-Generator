@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f93e0aef0e51f7240b6df07faa08500d
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Head
     100002: Hips
@@ -118,6 +118,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 2
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Horse_Walk
@@ -243,9 +244,12 @@ ModelImporter:
     globalScale: 0.02
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -259,6 +263,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 1
   humanDescription:
